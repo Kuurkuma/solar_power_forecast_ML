@@ -1,0 +1,37 @@
+# Configuration for the Solar Power Forecasting Project
+
+# --- Project Information ---
+project_info:
+  project_name: "solar_forecast" 
+  location_name : "brandenburger_gate"
+  version: "1.0"  
+  description: "XGBoost model to predict next-hour solar power output based on weather and time features."
+
+# --- API url
+api_url: "https://re.jrc.ec.europa.eu/api/v5_3"
+
+# --- Data Paths ---
+paths:
+  raw_data_path : "/Users/macbook/Development/sun_eu/data/01_raw"
+  interim_data_path : "/Users/macbook/Development/sun_eu/data/02_interim"
+  processed_data_path : "/Users/macbook/Development/sun_eu/data/03_processed"
+
+# --- Models Information --
+models:
+  output_path : "models/brandenburg_gate_v1"
+  model_name : "final_solar_pipeline.joblib"
+
+# --- Model Parameters ---
+# Use a dictionary for model params
+model_params: 
+  objective: 'reg:squarederror'
+  random_state: 42
+  n_jobs: -1 # Or 1
+  n_estimators': 400
+  learning_rate: 0.01
+  max_depth: 5
+  subsample : 0.9 
+  colsample_bytree : 0.7
+  gamma : 0.2
+  reg_alpha : 0.1
+  reg_lambda: 2
