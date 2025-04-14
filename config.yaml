@@ -12,13 +12,18 @@ api_url: "https://re.jrc.ec.europa.eu/api/v5_3"
 
 # --- Data Paths ---
 paths:
-  raw_data_path : "/Users/macbook/Development/sun_eu/data/01_raw"
-  interim_data_path : "/Users/macbook/Development/sun_eu/data/02_interim"
-  processed_data_path : "/Users/macbook/Development/sun_eu/data/03_processed"
-
+  raw_data_path : "/Users/macbook/Development/solar_power_forecast_ML/data/01_raw"
+  interim_data_path : "/Users/macbook/Development/solar_power_forecast_ML/data/02_interim"
+  processed_data_path : "/Users/macbook/Development/solar_power_forecast_ML/data/03_processed"
+file_names:
+  raw_file_name : "brandenburger_gate_seriescalc.csv"
+  interim_file_name : "no_headers_brandenburger_gate_seriescalc.csv"
+  cleaned_file_name : "cleaned_brandenburger_gate_seriescalc.parquet"
+  features_engineered_file_name : "features_brandenburger_gate_seriescalc.parquet"
+  
 # --- Models Information --
 models:
-  output_path : "models/brandenburg_gate_v1"
+  output_path : "/Users/macbook/Development/solar_power_forecast_ML/models/brandenburg_gate_v1"
   model_name : "final_solar_pipeline.joblib"
 
 # --- Model Parameters ---
