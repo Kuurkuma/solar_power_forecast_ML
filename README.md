@@ -1,4 +1,6 @@
-# Solar power output prediction 
+# Solar power output prediction
+![Alt text](reports/vizs/corr_power_irradiance_by_airT.png)
+ 
 ## Table of Contents
 
 1. Project Goal
