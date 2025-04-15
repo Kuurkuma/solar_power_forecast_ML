@@ -1,0 +1,37 @@
+.
+├── README.md
+├── __init__.py
+├── config.yaml
+├── data
+│   ├── 01_raw
+│   │   ├── raw_brandenburger_gate_seriescalc.csv
+│   │   └── raw_brandenburger_gate_seriescalc.json
+│   ├── 02_interim
+│   │   ├── cleaned_brandenburger_gate_seriescalc.parquet
+│   │   │   ├── _SUCCESS
+│   │   │   └── part-00000-05b8afc1-09f0-40a6-b54e-b8183bf2fac3-c000.snappy.parquet
+│   │   └── no_headers_brandenburger_gate_seriescalc.csv
+│   └── 03_processed
+│       └── features_brandenburger_gate_seriescalc.parquet
+├── main.py
+├── models
+│   └── brandenburg_gate_v1
+├── notebook
+│   ├── 01-ted-get-data.ipynb
+│   ├── 02-ted-data-prep-spark.ipynb
+│   ├── 03-ted-features_eng.ipynb
+│   └── 04-model-creation.ipynb
+├── project_structure.txt
+├── pyproject.toml
+├── reports
+│   └── vizs
+│       ├── corr_power_irradiance_by_airT.png
+│       └── corr_power_irradiance_by_airT_zoomed.png
+├── src
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── config.cpython-313.pyc
+│   └── get_data_api.py
+└── uv.lock
+
+12 directories, 23 files
